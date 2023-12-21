@@ -75,7 +75,7 @@ export default function Scene(props) {
             <Chapel position={[0, 0, 0]} />
             <MyEnvironment />
             <Birds />
-            <MagicFrame position={[-4, 6, -9.5]} scale={[2.216 * 3, 1.440 * 3, 1]} rotation={[0, Math.PI / 2, 0]} />
+            <MagicFrame position={[-4, 6, -9.5]} scale={[2.216 * 3, 1.440 * 3, 1]} />
             <lumaSplats
                 ref={splat}
                 semanticsMask={LumaSplatsSemantics.FOREGROUND}
@@ -89,7 +89,7 @@ export default function Scene(props) {
                 semanticsMask={LumaSplatsSemantics.FOREGROUND}
                 source='https://lumalabs.ai/capture/DF98A33B-12A2-4F2E-A479-3A1D141A945C'
                 position={[0.2, 2.7, -9.5]}
-                scale={1}
+                scale={1.7}
                 rotation-y={-Math.PI / 2.5}
             />
 

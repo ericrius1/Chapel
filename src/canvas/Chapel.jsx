@@ -24,7 +24,7 @@ export function Model(props) {
             <mesh geometry={nodes.Object_464.geometry} material={materials.Wood_Ven} />
             <mesh geometry={nodes.roof.geometry} material={materials.roof} />
             <mesh geometry={nodes.lowerroof.geometry} material={materials.lowerroof} />
-            <mesh geometry={nodes.altar.geometry} material={materials.altar} />
+            <mesh geometry={nodes.altar.geometry} material={materials.altar} position={[0.076, 2.692, -8.917]} scale={0.951} />
             <mesh geometry={nodes.innerwalls.geometry} material={materials.innerwalls} />
             <mesh geometry={nodes.Object_454.geometry} material={materials.innerwalls} />
             <mesh geometry={nodes.Object_456.geometry} material={materials.Transluc} />

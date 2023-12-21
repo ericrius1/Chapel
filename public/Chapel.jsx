@@ -15,7 +15,7 @@ export function Model(props) {
       <mesh geometry={nodes.table.geometry} material={materials['/mat/defaultMat']} />
       <mesh geometry={nodes.candle002.geometry} material={materials['default']} />
       <mesh geometry={nodes.Cube.geometry} material={nodes.Cube.material} position={[-0.647, 26.24, 8.429]} />
-      <mesh geometry={nodes.altar.geometry} material={materials.altar} position={[-0.053, 1.156, -8.078]} rotation={[0, -1.545, 0]} scale={2.584} />
+      <mesh geometry={nodes.altar.geometry} material={materials.altar} position={[0.076, 2.692, -8.917]} scale={0.951} />
       <mesh geometry={nodes.lowerroof.geometry} material={materials.lowerroof} />
       <mesh geometry={nodes.Object_461.geometry} material={materials.FrontCol} />
       <mesh geometry={nodes.Object_462.geometry} material={materials.Roofin02} />

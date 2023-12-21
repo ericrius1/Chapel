@@ -10,7 +10,7 @@ export default function MagicFrame(props) {
     const videoTexture = useVideoTexture('/videos/orb.mp4')
     return (
 
-        <mesh {...props}>
+        <mesh {...props} rotation={[0, Math.PI / 2, 0]}>
             <planeGeometry args={[1, 1]} />
             <meshBasicMaterial map={videoTexture} toneMapped={false} />
         </mesh>
