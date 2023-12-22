@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber"
 import { useRef } from "react"
 export default function MyEnvironment() {
 
-    const envMap = useTexture('/textures/environmentmap.jpg')
+    const envMap = useTexture('/environmentmaps/day.jpg')
     const mesh = useRef()
 
     const { height } = useControls('environment', { height: { value: -10, min: -10, max: 100, step: 1 } })
