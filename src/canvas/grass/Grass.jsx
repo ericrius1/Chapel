@@ -1,8 +1,12 @@
+
+// Grass modified from James Smyth's awesome Breath of the Wild Grass  https://smythdesign.com/blog/stylized-grass-webgl/
+
 import * as THREE from "three";
 import GrassMaterial from "./GrassMaterial";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { useTexture } from "@react-three/drei";
+
 
 
 // Parameters

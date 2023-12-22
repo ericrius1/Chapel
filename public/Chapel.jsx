@@ -5,11 +5,20 @@ Command: npx gltfjsx@6.2.15 chapel.glb
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export function Model(props) {
   const { nodes, materials } = useGLTF('/chapel.glb')
+
+  const groupRef = useRef()
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 1
+    }
+  })
+
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={groupRef}>
       <mesh geometry={nodes.candle.geometry} material={materials['default']} />
       <mesh geometry={nodes.woman.geometry} material={materials['default.001']} />
       <mesh geometry={nodes.table.geometry} material={materials['/mat/defaultMat']} />

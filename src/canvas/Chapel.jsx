@@ -5,6 +5,7 @@ Command: npx gltfjsx@6.2.15 chapel.glb
 
 import React, { useRef } from 'react'
 import { useGLTF, MeshTransmissionMaterial, useTexture, useVideoTexture } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export function Model(props) {
     const { nodes, materials } = useGLTF('/chapel.glb')
@@ -13,6 +14,13 @@ export function Model(props) {
     const purpleOceanTexture = useVideoTexture('/videos/purple_oceans.mp4')
 
     const nPurpleOceanTexture = useTexture('/textures/n_purple_oceans.jpg')
+
+    const groupRef = useRef()
+    useFrame(() => {
+        if (groupRef.current) {
+            groupRef.current.rotation.y += 1
+        }
+    })
     return (
         <group {...props} dispose={null}>
             <mesh geometry={nodes.candle.geometry} material={materials['default']} />
